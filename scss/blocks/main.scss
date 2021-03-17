@@ -1,0 +1,12 @@
+.main {
+    display: block;
+    width: 100%;
+    background-color: $white;
+    padding-top: 7rem;
+    color: $black;
+    
+     @media (max-width: $mobile-madia) {
+        padding-top: 0rem;
+    }
+    
+}

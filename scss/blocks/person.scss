@@ -1,0 +1,96 @@
+
+.person__info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    
+    align-items:flex-end;
+    
+    @media (max-width: $mobile-madia) {
+        display: block;
+        text-align: left;
+    }
+}
+
+.person__name {
+    font-size: 47px;
+    font-weight: 500;
+    line-height: 59px;
+    color: $title;
+    
+    @media (max-width: $table-madia) {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    @media (max-width: $mobile-madia) {
+        font-size: 5.7rem;
+        line-height: 1;
+    }
+}
+
+
+.person__desckt {
+    line-height: 22px;
+    color: $title;
+    font-size: $c-size;
+    
+     @media (max-width: $table-madia) {
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+    
+    @media (max-width: $mobile-madia) {
+        font-size: 1.8rem;
+        line-height: 1;
+        margin-top: 2.5rem;
+        padding-left: 0.5rem;
+    }
+}
+
+.person__lang {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transform: rotate(-90deg) translate(50%) translateY(100%);
+    
+    p {
+        color: $gray;
+    }
+    
+    .black {
+        color: $title;
+    }
+    
+      @media (max-width: $table-madia) {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+    
+      @media (max-width: $mobile-madia) {
+        display: none;
+    }
+}
+
+.person__photo {
+    display: block;
+    width: 100%;
+    
+}
+
+.photo {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

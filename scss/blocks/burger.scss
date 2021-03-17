@@ -1,0 +1,72 @@
+.burger {
+    display: none;
+    
+     @media (max-width: $mobile-madia) {
+        display: block;
+    }
+    
+    position: absolute;
+    top: 10%;
+    right: 2rem;
+    z-index: 1001;
+    
+    color: transparent;
+    font-size: 0;
+    width: 3rem;
+    height: 2rem;
+    background: none;
+    border: none;
+    
+    &:before,
+    &:after,
+    span {
+        width: 100%;
+        height: 3px;
+        background-color: $black;
+        display: block;
+        
+        position: absolute;
+        right: 0;  
+    }
+    
+    &:before,
+    &:after {
+        transition: all .2s linear;
+        content: "";
+    }
+    
+    &:before {
+        top: 0;
+    }
+    
+    &:after {
+        bottom: 0;
+    }
+    
+    span  {
+        top: 50%;
+        transition: opacity .2s linear;
+        transform: translateY(-50%);
+    }
+    
+    &.active {
+        
+        span {
+            opacity: 0;
+        }
+        
+        &:before,
+        &:after {
+            top: 0;
+        }
+        
+        &:before {
+            transform:rotate(45deg);
+        }
+   
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+    
+}

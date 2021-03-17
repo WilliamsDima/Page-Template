@@ -1,0 +1,62 @@
+.work-programs {
+    display: grid;
+    margin-top: 9rem;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    
+    @media (max-width: $mobile-madia) {
+        grid-template-columns: none;
+        justify-content: center;
+        
+    }
+}
+
+.programs {
+    display: block;
+    flex-wrap: wrap;
+        
+     
+    @media (max-width: $mobile-madia) {
+        margin-bottom: 8rem;
+        
+    }
+    
+}
+
+.programs__name {
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+    color: $gray;
+    font-weight: 500;
+}
+
+.programs__skils {
+    display: flex;
+    
+    img {
+        margin-right: 1rem;
+    }
+    
+    img:last-child {
+        margin-right: 0;
+    }
+}
+
+.star {
+    
+    color: #E5E5E5;
+    
+    &--black {
+        filter: brightness(20%)
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+.Portfolio {
+     display: block;
+    width: 100%;
+}
+
+.work__item {
+    
+    margin-left: 25rem;
+    margin-right: 25rem;
+    margin-bottom: 17rem;
+    
+    &:first-child {
+    margin-top: 4rem;   
+    }
+    
+    &:last-child {
+    margin-bottom: 0;   
+    }
+    
+    @media (max-width: $table-madia) {
+        margin-left: 15rem;
+        margin-right: 15rem;
+        margin-bottom: 10rem;
+    }
+    
+    @media (max-width: $mobile-madia) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        
+    }
+    
+    
+}
+
+.work {
+    width: 100%;
+    margin-bottom: 4.5rem;
+}
+
+.work-link {
+    text-decoration: none;
+    color: $title;
+    font-size: $c-size;
+
+    transition: all .2s linear;
+    
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}

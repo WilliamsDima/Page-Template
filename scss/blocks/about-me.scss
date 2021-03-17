@@ -1,0 +1,29 @@
+
+.title__container {
+    font-size: $t-size;
+    color: $title;
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+    @media (max-width: $mobile-madia) {
+      margin-bottom: 5rem;
+      margin-top: 8rem;
+        
+    }
+}
+
+.text__content {
+    font-size: $c-size;
+    color: $title;
+    
+    p:last-child {
+      margin-bottom: 0;
+    }
+    
+    p {
+        margin-bottom: 4rem;
+    }
+    
+    
+}
+

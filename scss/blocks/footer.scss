@@ -1,0 +1,67 @@
+.footer {
+    display: block;
+    text-align: center;
+    
+    padding-bottom: 120px;
+    
+    .text__content {
+        line-height: 1.3;
+    }
+}
+
+.send-btn {
+    margin-top: 3rem;
+    margin-bottom: 9rem;
+    padding: 13px 30px;
+    
+    border-radius: 30px;
+    border: none;
+    
+    color: $white;
+    font-size: $c-size;
+    font-weight: 500;
+    
+    background-color: $title;
+    transition: all .2s linear;
+    
+    &:hover {
+        background-color: lighten($title, 10);
+    }
+}
+
+.social {
+    margin-bottom: 4.5rem;
+}
+
+.social-link {
+    margin-right: 7rem;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+    
+    @media (max-width: $mobile-madia) {
+        margin-right: 5rem;
+        
+    }
+}
+
+
+.footer-text {
+    color: $gray;
+    font-size: 14px;
+    font-weight: 500;
+    
+     @media (max-width: $mobile-madia) {
+        font-size: 1.8rem;
+        
+    }
+}
+
+
+
+
+
+
+
+
